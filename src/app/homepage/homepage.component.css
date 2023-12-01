@@ -1,0 +1,38 @@
+header{
+    display: flex;
+    max-width: 100%;
+    height: 4rem;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 12%;
+    background-color: rgba(237,238,238,255);
+}
+.polenta-logo-box{
+    width: 46%;
+}
+.polenta-logo-box a img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+app-menu{
+    display: flex;
+}
+.buttons-box{
+    display: none;
+    width: 55%;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10%;
+}
+.header-buttons{
+    display: flex;
+    align-items: center;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+}
