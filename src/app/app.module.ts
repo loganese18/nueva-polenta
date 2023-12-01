@@ -7,9 +7,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { MenuComponent } from './homepage/menu/menu.component';
+import { EntradasComponent } from './homepage/entradas/entradas.component';
 
 @NgModule({
-  declarations: [AppComponent, HomepageComponent, MenuComponent],
+  declarations: [AppComponent, HomepageComponent, MenuComponent, EntradasComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
