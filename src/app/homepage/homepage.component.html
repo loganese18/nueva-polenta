@@ -28,3 +28,28 @@
         </a>
     </nav>
 </header>
+<main>
+    <div class="background-box">
+        <video preload="auto" onloadedmetadata="this.muted=true" autoplay loop playsinline
+            src="./assets/back-video.mp4"></video>
+    </div>
+    <div class="main-container" #mainContainer>
+        <div class="hola-polenta-box">
+            <p>Hola, llegaste a</p>
+            <div class="estatua">
+                <img src="./assets/diseño/estatua.png" alt="Imagen estatua griega" />
+            </div>
+            <div class="polenta-main">
+                <img src="./assets/diseño/hola-polenta-logo.png" alt="Logo Polenta" />
+            </div>
+        </div>
+        <div class="entradas-container">
+            <div class="entradas-header" id="entradas">
+                <button class="header-buttons" (click)="scrollToElement('entradas')">
+                    <h1>SACÁ TUS ENTRADAS</h1>
+                </button>
+            </div>
+            <app-entradas></app-entradas>
+        </div>
+    </div>
+</main>

@@ -1,1 +1,40 @@
-<p>entradas works!</p>
+<div class="carousel-container">
+    <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" (breakpoint)="breakpoint($event)"
+        [config]="slideConfig">
+        <div ngxSlickItem class="slide">
+            <img src="../../assets/entradas/caba-1011.png" alt="Ticket NEUQUEN 11/11" />
+            <div class="text-box">
+                <a href="https://www.passline.com/eventos/polenta-en-c" rel="noopener external" target="_blank">
+                    <div class="comprar">COMPRAR</div>
+                </a>
+            </div>
+        </div>
+        <div ngxSlickItem class="slide">
+            <img src="./../assets/entradas/neuquen-1111.png" alt="Ticket CABA 10/11" />
+            <div class="text-box">
+                <a href="https://fivepro.tuentrada.com/selection/event/date?productId=10228952755761"
+                    rel="noopener external" target="_blank">
+                    <div class="comprar">COMPRAR</div>
+                </a>
+            </div>
+        </div>
+        <div ngxSlickItem class="slide">
+            <img src="./../assets/entradas/bsas-2411.png" alt="Ticket BUENOS AIRES 24/11" />
+            <div class="text-box">
+                <a href="https://www.passline.com/eventos/polenta-electronica-215567" rel="noopener external"
+                    target="_blank">
+                    <div class="comprar">COMPRAR</div>
+                </a>
+            </div>
+        </div>
+        <div ngxSlickItem class="slide">
+            <img src="./../assets/entradas/temperley-2411.png" alt="Ticket TEMPERLEY 24/11" />
+            <div class="text-box">
+                <a href="https://livepass.com.ar/events/polenta-en-temperley-24-11" rel="noopener external"
+                    target="_blank">
+                    <div class="comprar">COMPRAR</div>
+                </a>
+            </div>
+        </div>
+    </ngx-slick-carousel>
+</div>
