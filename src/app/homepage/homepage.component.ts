@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-homepage',
   templateUrl: './homepage.component.html',
-  styleUrls: ['./homepage.component.css'],
+  styleUrls: ['./homepage.component.css', './homepage-responsive.css'],
 })
 export class HomepageComponent {
   scrollToElement(id: string): void {

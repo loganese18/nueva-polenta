@@ -4,7 +4,7 @@ import { SlickCarouselComponent } from 'ngx-slick-carousel';
 @Component({
   selector: 'app-entradas',
   templateUrl: './entradas.component.html',
-  styleUrls: ['./entradas.component.css'],
+  styleUrls: ['./entradas.component.css', './entradas-responsive.css'],
 })
 export class EntradasComponent implements AfterViewInit {
   @ViewChild('slickModal') slickModal!: SlickCarouselComponent;

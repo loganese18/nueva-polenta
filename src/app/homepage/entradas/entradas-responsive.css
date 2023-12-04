@@ -1,0 +1,8 @@
+@media only screen and (min-width: 1000px) {
+    :host,
+    .carousel-container{
+        display: flex;
+        max-width: 100%;
+        width: 95%;
+    }
+}

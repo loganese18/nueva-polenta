@@ -34,8 +34,8 @@
       font-size: 1.7rem;
       line-height: 2rem;
     }
-    
   }
+
   @media only screen and (min-width: 700px) and (max-width: 999px){
     .momento{
       max-width: 600px;
@@ -60,7 +60,7 @@
     header{
       height: 5rem;
       padding-inline: 10%;
-      background-image: url(./assets/wireframe/wireframe-header.png);
+      background-image: url(../../assets/wireframe/wireframe-header.png);
       background-repeat: no-repeat;
       background-position: bottom right;
       background-size: contain;
@@ -75,7 +75,7 @@
           min-width: 162px;
           min-height: 37px;
         }
-        .menu-box{
+        app-menu{
         display: none;
         }
         .buttons-box{
@@ -137,14 +137,6 @@
         margin-bottom: 2%;
         flex: initial;
         scroll-margin-top: 4rem;
-      }
-      .carousel-container{
-        display: flex;
-        max-width: 100%;
-        width: 95%;
-        justify-content: center;
-        align-items: center;
-        flex: initial;
       }
       .scroll-button{
         bottom: 40px;
@@ -239,7 +231,7 @@
       
       .info-background{
         padding: 5% 12%;
-        background-image: url(./assets/wireframe/wireframe-info-left.png), url(./assets/wireframe/wireframe-info-right.png), url(./assets/background-tile.png);
+        background-image: url(../../assets/wireframe/wireframe-info-left.png), url(../../assets/wireframe/wireframe-info-right.png), url(../../assets/background-tile.png);
         background-size: 55%, 60%, auto;
         background-repeat: no-repeat, no-repeat, repeat;
         background-position: left -520px top 350px, right -600px top 70px, 0;
@@ -276,7 +268,7 @@
         margin: 2% 0 0 0; 
       }
       .redes-background{
-        background-image: url(./assets/diseño/lata.png), url(./assets/diseño/sifon.png);
+        background-image: url(../../assets/diseño/lata.png), url(../../assets/diseño/sifon.png);
         background-repeat: no-repeat, no-repeat;
         background-position: left center, right center;
         background-size: contain;
