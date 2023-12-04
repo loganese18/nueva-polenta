@@ -64,37 +64,34 @@
       background-repeat: no-repeat;
       background-position: bottom right;
       background-size: contain;
-      }
-      .polenta-logo-box{
+    }
+    .polenta-logo-box{
         width: 15%;
-        }
-        .polenta-logo-box a{
-          display: flex;
-        }
-        .polenta-logo-box a img{
+    }
+    .polenta-logo-box a{
+        display: flex;
+    }
+    .polenta-logo-box a img{
           min-width: 162px;
           min-height: 37px;
-        }
-        app-menu{
-        display: none;
-        }
-        .buttons-box{
+    }
+    .buttons-box{
         display: flex;
         width: 70%;
         gap: 7%;
-      }
-      .header-buttons{
+    }
+    .header-buttons{
         flex: none;
-      }
-      .iconos img{
+    }
+    .iconos img{
         width: 35px;
         height: 35px;
-      }
-      main{
+    }
+    main{
         height: auto;
         background-image: none;
         position: relative;
-      }
+    }
       .background-box{
         position: absolute;
         display: flex;
@@ -305,14 +302,5 @@
     }
     .redes-background{
       margin-inline: 14%;
-    }
-  }
-  
-  @media screen and (orientation: landscape) {
-    .colapse-button-box{
-      margin: 2% 7% 7% 0%;
-    }
-    .menu{
-      width: 50%;
     }
   }

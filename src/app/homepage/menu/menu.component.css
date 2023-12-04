@@ -127,3 +127,17 @@
     width: 26px;
     height: 26px;
 }
+
+@media only screen and (min-width: 1000px) {
+    :host{
+        display: none;
+    }
+}
+@media screen and (orientation: landscape) {
+    .colapse-button-box{
+      margin: 2% 7% 7% 0%;
+    }
+    .menu{
+      width: 50%;
+    }
+  }
