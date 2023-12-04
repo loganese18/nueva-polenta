@@ -1,10 +1,4 @@
-:host{
-    display: flex;
-    max-width: 100%;
-    width: 82%;
-    justify-content: center;
-    align-items: center;
-}
+:host,
 .carousel-container{
     display: flex;
     max-width: 100%;
