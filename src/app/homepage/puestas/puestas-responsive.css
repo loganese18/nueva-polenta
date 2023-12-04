@@ -1,0 +1,9 @@
+.puestas-text h1{
+    font-size: 2.2rem;
+}
+.puestas-text p{
+    font-size: .9rem;
+}
+.swiper-button-next, .swiper-button-prev{
+    display: flex;
+}

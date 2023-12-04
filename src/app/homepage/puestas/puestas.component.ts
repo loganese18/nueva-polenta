@@ -1,31 +1,36 @@
 import { AfterViewInit, Component, HostListener } from '@angular/core';
 import Swiper from 'swiper';
 import { Navigation, Pagination } from 'swiper/modules';
+import { SwiperOptions } from 'swiper/types/swiper-options';
 
 @Component({
   selector: 'app-puestas',
   templateUrl: './puestas.component.html',
-  styleUrls: ['./puestas.component.css'],
+  styleUrls: ['./puestas.component.css', './puestas-responsive.css'],
 })
 export class PuestasComponent implements AfterViewInit {
+  swiperParams: SwiperOptions = {
+    autoplay: false,
+    centeredSlides: true,
+    slidesPerView: 1,
+    slidesPerGroup: 1,
+    spaceBetween: 10,
+    lazyPreloadPrevNext: 2,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true, // Permite hacer clic en los puntos para navegar a la diapositiva correspondiente
+      bulletClass: 'swiper-pagination-bullet',
+    },
+    modules: [Navigation, Pagination],
+  };
+
   ngAfterViewInit(): void {
-    const swiper = new Swiper('.swiper', {
-      autoplay: false,
-      centeredSlides: true,
-      slidesPerView: 1,
-      slidesPerGroup: 1,
-      spaceBetween: 10,
-      lazyPreloadPrevNext: 2,
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true, // Permite hacer clic en los puntos para navegar a la diapositiva correspondiente
-      },
-      modules: [Navigation, Pagination],
-    });
+    const swiper = new Swiper('.swiper', this.swiperParams);
     console.log('Inicialización de Swiper');
   }
 

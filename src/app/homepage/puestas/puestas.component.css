@@ -1,4 +1,3 @@
-:host,
 .puestas-container{
     display: flex;
     color: aliceblue;
@@ -21,11 +20,6 @@
     color: aliceblue;
     margin-bottom: 6%;
 }
-.puestas-gallery{
-    display: flex;
-    justify-content: center;
-    margin-bottom: -25px;
-}
 .swiper{
     display: flex;
     width: 100%;
@@ -36,6 +30,9 @@
 .imagen-puestas{
     max-width: 100%;
     width: 100%;
+}
+.swiper-pagination-bullet{
+    background-color: aliceblue !important;
 }
 .swiper-button-next, .swiper-button-prev{
     display: none;
