@@ -1,6 +1,6 @@
 <div class="carousel-container">
     <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" (breakpoint)="breakpoint($event)"
-        [config]="slideConfig">
+        (init)="slickInit($event)" [config]="slideConfig">
         <div ngxSlickItem class="slide">
             <img src="../../assets/entradas/caba-1011.png" alt="Ticket NEUQUEN 11/11" />
             <div class="text-box">

@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ViewChild } from '@angular/core';
 import { SlickCarouselComponent } from 'ngx-slick-carousel';
 
 @Component({
@@ -6,8 +6,14 @@ import { SlickCarouselComponent } from 'ngx-slick-carousel';
   templateUrl: './entradas.component.html',
   styleUrls: ['./entradas.component.css'],
 })
-export class EntradasComponent {
+export class EntradasComponent implements AfterViewInit {
   @ViewChild('slickModal') slickModal!: SlickCarouselComponent;
+
+  ngAfterViewInit(): void {
+    if (this.slickModal) {
+      this.slickModal.initSlick();
+    }
+  }
 
   slideConfig = {
     slidesToShow: 3,
