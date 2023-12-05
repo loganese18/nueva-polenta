@@ -11,10 +11,9 @@ import { SwiperOptions } from 'swiper/types/swiper-options';
 export class PuestasComponent implements AfterViewInit {
   swiperParams: SwiperOptions = {
     autoplay: false,
-    centeredSlides: true,
     slidesPerView: 1,
-    slidesPerGroup: 1,
-    spaceBetween: 10,
+    spaceBetween: 50,
+    rewind: true,
     lazyPreloadPrevNext: 2,
     navigation: {
       nextEl: '.swiper-button-next',
@@ -30,6 +29,7 @@ export class PuestasComponent implements AfterViewInit {
   };
 
   ngAfterViewInit(): void {
+    this.checkScreenWidth();
     const swiper = new Swiper('.swiper', this.swiperParams);
     console.log('Inicialización de Swiper');
   }
