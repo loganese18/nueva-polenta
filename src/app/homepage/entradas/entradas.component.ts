@@ -16,7 +16,7 @@ export class EntradasComponent implements AfterViewInit {
   }
 
   slideConfig = {
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     swipeToSlide: true,
     adaptiveHeight: true,
