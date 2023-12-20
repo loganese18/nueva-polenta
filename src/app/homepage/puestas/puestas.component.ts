@@ -22,7 +22,7 @@ export class PuestasComponent implements AfterViewInit {
     pagination: {
       el: '.swiper-pagination',
       type: 'bullets',
-      clickable: true, // Permite hacer clic en los puntos para navegar a la diapositiva correspondiente
+      clickable: true,
       bulletClass: 'swiper-pagination-bullet',
     },
     modules: [Navigation, Pagination],
