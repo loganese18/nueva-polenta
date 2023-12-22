@@ -42,3 +42,6 @@
     display: none;
     color: aliceblue !important;
 }
+.swiper-button-next::after, .swiper-button-prev::after{
+    font-size: 3rem;
+}
