@@ -13,7 +13,7 @@ export class PuestasComponent implements AfterViewInit {
     autoplay: false,
     slidesPerView: 1,
     spaceBetween: 50,
-    rewind: true,
+    loop: true,
     watchOverflow: false,
     lazyPreloadPrevNext: 2,
     navigation: {
@@ -47,7 +47,6 @@ export class PuestasComponent implements AfterViewInit {
     './assets/puestas-mobile/mobile-puesta9.png',
     './assets/puestas-mobile/mobile-puesta10.png',
     './assets/puestas-mobile/mobile-puesta11.png',
-    './assets/puestas-mobile/mobile-puesta12.png',
   ];
   puestas_desktop: string[] = [
     './assets/puestas-desktop/desktop-puesta1.png',

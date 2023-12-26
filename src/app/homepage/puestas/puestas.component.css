@@ -34,9 +34,9 @@
     max-width: 100%;
     width: 100%;
 }
-.swiper-pagination-bullet{
-    background-color: aliceblue !important;
-    background: greenyellow !important;
+.swiper-pagination-bullets {
+    --swiper-pagination-bullet-inactive-color: #00FF00;
+    --swiper-pagination-color: #00FF00;
 }
 .swiper-button-next, .swiper-button-prev{
     display: none;
