@@ -16,6 +16,9 @@
     .puestas-text p{
         font-size: 1.1rem;
     }
+    .swiper-pagination-bullets {
+        --swiper-pagination-bullet-horizontal-gap: 10px;
+    }
     .swiper-button-next, .swiper-button-prev{
         display: flex;
         margin-inline: 45px;
