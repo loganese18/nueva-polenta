@@ -14,6 +14,7 @@ export class PuestasComponent implements AfterViewInit {
     slidesPerView: 1,
     spaceBetween: 50,
     rewind: true,
+    watchOverflow: false,
     lazyPreloadPrevNext: 2,
     navigation: {
       nextEl: '.swiper-button-next',
@@ -57,7 +58,6 @@ export class PuestasComponent implements AfterViewInit {
     './assets/puestas-desktop/desktop-puesta6.png',
     './assets/puestas-desktop/desktop-puesta7.png',
     './assets/puestas-desktop/desktop-puesta8.png',
-    './assets/puestas-desktop/desktop-puesta9.png',
   ];
 
   isMobileScreen = true;
