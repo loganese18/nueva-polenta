@@ -9,6 +9,9 @@ import { SwiperOptions } from 'swiper/types/swiper-options';
   styleUrls: ['./puestas.component.css', './puestas-responsive.css'],
 })
 export class PuestasComponent implements AfterViewInit {
+
+  private mySwiper: Swiper | undefined;
+
   swiperParams: SwiperOptions = {
     autoplay: false,
     slidesPerView: 1,
@@ -24,15 +27,18 @@ export class PuestasComponent implements AfterViewInit {
       el: '.swiper-pagination',
       type: 'bullets',
       clickable: true,
-      bulletClass: 'swiper-pagination-bullet',
     },
     modules: [Navigation, Pagination],
   };
 
   ngAfterViewInit(): void {
     this.checkScreenWidth();
-    const swiper = new Swiper('.swiper', this.swiperParams);
+    this.initSwiper();
     console.log('Inicialización de Swiper');
+  }
+
+  initSwiper() {
+    this.mySwiper = new Swiper('.swiper', this.swiperParams);
   }
 
   puestas_mobile: string[] = [
@@ -63,11 +69,16 @@ export class PuestasComponent implements AfterViewInit {
 
   @HostListener('window:resize', ['$event'])
   onResize(event: any) {
+    if (this.mySwiper) {
+      this.mySwiper.update();
+      this.mySwiper.updateSize();
+      this.mySwiper.updateProgress();
+    }
     this.checkScreenWidth();
   }
 
   checkScreenWidth() {
-    if (window.innerWidth > 950) {
+    if (window.innerWidth > 650) {
       this.isMobileScreen = false;
     } else {
       this.isMobileScreen = true;
