@@ -36,7 +36,7 @@
     }
   }
 
-  @media only screen and (min-width: 700px) and (max-width: 999px){
+  @media only screen and (min-width: 700px) and (max-width: 1214px){
     .momento{
       max-width: 600px;
     }
@@ -141,88 +141,7 @@
         background-color: rgba(200, 200, 200, 0.6);
         font-size: 25px;
       }
-      .momentos-container{
-        display: flex;
-        flex-direction: column;
-        max-width: 100%;
-        align-items: center;
-        margin: 0 auto;
-      }
-      #momentos-polenta{
-        font-size: 2.2rem;
-        margin: 5% 0 0 0;
-        scroll-margin-top: 4rem;
-      }
-      .momentos-box{
-        flex-direction: row;
-        align-items: normal;
-        max-width: 70%;
-        max-height: 100%;
-        justify-content: space-between;
-        margin-inline: 0;
-        margin-bottom: 2%;
-      }
-      .momento{
-        flex-direction: column;
-        flex: none;
-        height: auto;
-        width: 24%;
-        border-radius: 15px;
-      }
-      .remeras,
-      .angeles{
-          flex-direction: column;
-      }
-      .img-box{
-        display: block;
-        width: 100%;
-        max-width: 100%;
-        height: 66%;
-        flex: none;
-        border-radius: 5px 5px 0 0;
-      }
-      .img-box img{
-        display: block;
-        width: 100%;
-        height: 120%;
-        object-fit: cover;
-        position: relative;
-        top: -20%;
-      }
-      .remeras img{
-        height: 140%;
-        top: -40%;
-      }
-      .angeles img{
-        height: 130%;
-        top: -25%;
-      }
-      .crew img{
-        height: 125%;
-      }
-      .momento h2{
-        width: 100%;
-        height: auto;
-        font-size: 1.5vw;
-        line-height: 1;
-        margin-top: 2%;
-      }
-      .momento p{
-        max-width: 100%;
-        font-size: .85vw;
-        line-height: 2;
-        font-weight: normal;
-      }
-      .crew p{
-        padding-inline: 1%;
-      }
-      .m-text-box{
-        flex: 1;
-        max-width: 100%;
-      }
-      .comprar{
-        font-size: 2rem;
-      }
+      
       
       .info-background{
         padding: 5% 12%;
@@ -297,6 +216,88 @@
   @media only screen and (min-width: 1215px){
     header{
     padding-inline: 15%;
+    }
+    .momentos-container{
+      display: flex;
+      flex-direction: column;
+      max-width: 100%;
+      align-items: center;
+      margin: 0 auto;
+    }
+    #momentos-polenta{
+      font-size: 2.2rem;
+      margin: 5% 0 0 0;
+      scroll-margin-top: 4rem;
+    }
+    .momentos-box{
+      flex-direction: row;
+      align-items: normal;
+      max-width: 70%;
+      max-height: 100%;
+      justify-content: space-between;
+      margin-inline: 0;
+      margin-bottom: 2%;
+    }
+    .momento{
+      flex-direction: column;
+      flex: none;
+      height: auto;
+      width: 24%;
+      border-radius: 15px;
+    }
+    .remeras,
+    .angeles{
+        flex-direction: column;
+    }
+    .img-box{
+      display: block;
+      width: 100%;
+      max-width: 100%;
+      height: 66%;
+      flex: none;
+      border-radius: 5px 5px 0 0;
+    }
+    .img-box img{
+      display: block;
+      width: 100%;
+      height: 120%;
+      object-fit: cover;
+      position: relative;
+      top: -20%;
+    }
+    .remeras img{
+      height: 140%;
+      top: -40%;
+    }
+    .angeles img{
+      height: 130%;
+      top: -25%;
+    }
+    .crew img{
+      height: 125%;
+    }
+    .momento h2{
+      width: 100%;
+      height: auto;
+      font-size: 1.5vw;
+      line-height: 1;
+      margin-top: 2%;
+    }
+    .momento p{
+      max-width: 100%;
+      font-size: .85vw;
+      line-height: 2;
+      font-weight: normal;
+    }
+    .crew p{
+      padding-inline: 1%;
+    }
+    .m-text-box{
+      flex: 1;
+      max-width: 100%;
+    }
+    .comprar{
+      font-size: 2rem;
     }
     .redes-background{
       margin-inline: 14%;
